@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './recipe.module';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent {
-  recipes = [];
+  recipes : Recipe[] = [
+    new Recipe('A test recipe', 'A test desc', 'https://www.cookipedia.co.uk/wiki/images/d/d6/General_Tso%27s_chicken_recipe.jpg')
+  ];
 
-  
 }
